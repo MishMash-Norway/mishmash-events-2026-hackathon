@@ -1,0 +1,12 @@
+# Install torch/torchaudio separately first (platform-specific), then run:
+#   pip install -r requirements.txt
+
+acids-rave
+jupyterlab
+ipykernel
+tensorboard
+librosa
+soundfile
+numpy
+pandas
+matplotlib
