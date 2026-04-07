@@ -12,19 +12,10 @@ Before training your own RAVE model, use pretrained models to:
 - test BioPoint-to-latent mappings quickly
 - explore control behavior and sonic range
 
-## 2) Pretrained Models (TODO)
+## 2) Pretrained Models
 
-| Model | Source | Sample Rate | Latent Controls | Download | Notes |
-| --- | --- | ---: | ---: | --- | --- |
-| TODO Model A | TODO | TODO | TODO | TODO | Add causal/streaming notes |
-| TODO Model B | TODO | TODO | TODO | TODO | Add domain/style notes |
-| TODO Model C | TODO | TODO | TODO | TODO | Add expected use case |
-
-When adding links, include whether the model is:
-
-- causal-trained
-- streaming-exported
-- compatible with your target sample rate (`nn~` does not resample)
+- [Intelligent Instruments Lab RAVE models (Hugging Face)](https://huggingface.co/Intelligent-Instruments-Lab/rave-models)
+- [IRCAM RAVE models download page](https://acids-ircam.github.io/rave_models_download)
 
 ## 3) Read Export Naming Quickly
 
