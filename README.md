@@ -40,7 +40,7 @@ Both are valid for this hackathon. Use whichever environment matches your workfl
 
 All commands below assume you are in the repository root.
 
-### A) Check Python
+### A) Check Python (Version 3.12 is needed for the notebooks)
 
 macOS / Ubuntu:
 
