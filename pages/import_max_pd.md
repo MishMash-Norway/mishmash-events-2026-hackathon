@@ -49,7 +49,7 @@ To test:
 
 ```bash
 python RAVE/export_nn.py \
-  --run_path "training_runs/cagri-ML-666/emotions_2phase_safe_fd6661f1c8" \
+  --run_path "<path_to_run_folder>" \
   --streaming \
   --base_name "emotions_hi_fid" \
   --fidelity 0.999
