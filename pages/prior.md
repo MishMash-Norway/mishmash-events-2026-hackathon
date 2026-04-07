@@ -38,7 +38,7 @@ Use the RAVE CLI directly (advanced path):
 
 ```bash
 rave train_prior \
-  --model "training_runs/<vae_run>/version_0/checkpoints/last.ckpt" \
+  --model "<path_to_vae_checkpoint>" \
   --db_path "data/Emotions_norm_dataset" \
   --out_path "training_runs" \
   --name "emotions_prior" \
@@ -59,8 +59,8 @@ For prior-enabled export, use `rave export` with `--prior`:
 
 ```bash
 rave export \
-  --run "training_runs/<vae_run>/version_0/checkpoints/last.ckpt" \
-  --prior "training_runs/<prior_run>/version_0/checkpoints/last.ckpt" \
+  --run "<path_to_vae_checkpoint>" \
+  --prior "<path_to_prior_checkpoint>" \
   --streaming \
   --name "emotions_with_prior"
 ```

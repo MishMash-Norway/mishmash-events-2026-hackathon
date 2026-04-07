@@ -21,13 +21,13 @@ Before training your own RAVE model, use pretrained models to:
 
 Example:
 
-- `emotions_2phase_safe_b512_r48000_z2.ts`
+- `voice_vocalset_b2048_r48000_z16.ts`
 
 Interpretation:
 
 - `b512`: latent block size
 - `r48000`: model sample rate
-- `z2`: 2 controllable latent channels
+- `z16`: 16 controllable latent channels
 
 ## 4) Always Check Sidecar Metadata
 
@@ -49,7 +49,7 @@ To test:
 
 ```bash
 python RAVE/export_nn.py \
-  --run_path "training_runs/cagri-ML-666/emotions_2phase_safe_fd6661f1c8" \
+  --run_path "<path_to_run_folder>" \
   --streaming \
   --base_name "emotions_hi_fid" \
   --fidelity 0.999

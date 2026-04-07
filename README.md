@@ -156,7 +156,7 @@ rave --help
 
 1. [Installation and Environment Check](pages/install.md)
 2. [BioPoint Sensor Setup](pages/biopoint.md)
-3. [Import and Control Pretrained Models in Max/Pd](pages/import_max_pd.md)
+3. [Import Pretrained Models in Max/Pd](pages/import_max_pd.md)
 
 ### Optional: Train your own RAVE
 

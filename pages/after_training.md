@@ -6,14 +6,14 @@ This guide explains how to inspect a finished run and export a `.ts` file.
 
 ## 1) Run Folder Naming
 
-Typical format:
+Common location in this repo:
 
-- `training_runs/<run_name>_<gin_hash>`
-- optionally: `training_runs/<host>/<run_name>_<gin_hash>`
+- `<project_root>/training_runs/<run_name>_<gin_hash>`
+- optionally: `<project_root>/training_runs/<host>/<run_name>_<gin_hash>`
 
 Example:
 
-- `training_runs/cagri-ML-666/emotions_2phase_safe_fd6661f1c8`
+- `<path_to_run_folder>`
 
 ## 2) What You Should Find
 
@@ -30,7 +30,7 @@ Export from a specific run:
 
 ```bash
 python RAVE/export_nn.py \
-  --run_path "training_runs/cagri-ML-666/emotions_2phase_safe_fd6661f1c8" \
+  --run_path "<path_to_run_folder>" \
   --streaming \
   --base_name "emotions_2phase_safe"
 ```
@@ -61,7 +61,7 @@ Example:
 To test different latent counts:
 
 ```bash
-RUN="training_runs/cagri-ML-666/emotions_2phase_safe_fd6661f1c8"
+RUN="<path_to_run_folder>"
 for F in 0.95 0.99 0.995 0.999; do
   python RAVE/export_nn.py \
     --run_path "$RUN" \
