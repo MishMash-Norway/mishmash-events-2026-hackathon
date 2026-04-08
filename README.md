@@ -40,7 +40,7 @@ Both are valid for this hackathon. Use whichever environment matches your workfl
 
 All commands below assume you are in the repository root.
 
-**NOTE:** The Python installations are necessary mainly for training your own RAVE model. For using pretrained models, you only need the audio programming environment (Max/Pd/SuperCollider) installed. In addition: [BioPoint Sensor Setup](pages/biopoint.md).
+**Note:** Python is mainly needed for training your own RAVE model and for running the BioPoint notebooks. If you only want to use pretrained models in Max/Pd/SuperCollider, you only need that audio environment installed. For the BioPoint notebooks, use Python `3.12`.
 
 ### A) Check Python
 
@@ -61,7 +61,7 @@ If Python is not found, install it first:
 macOS (Homebrew):
 
 ```bash
-brew install python@3.11
+brew install python@3.12
 python3 --version
 ```
 
@@ -76,7 +76,7 @@ python3 --version
 Windows (PowerShell, winget):
 
 ```powershell
-winget install Python.Python.3.11
+winget install Python.Python.3.12
 py --version
 ```
 
@@ -198,7 +198,6 @@ This is the main part of the hackathon. Working either solo or in a team, you wi
 
 - Additional audio effects, except for basic live-mixing elements such as reverb and compression
 - Audio sources other than RAVE-based synthesis, except when using RAVE as an audio effect (timbre transfer) processing an external audio input
-
 
 ## Troubleshooting
 
