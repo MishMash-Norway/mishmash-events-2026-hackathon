@@ -17,11 +17,6 @@ Before training your own RAVE model, use pretrained models to:
 - [Intelligent Instruments Lab RAVE models (Hugging Face)](https://huggingface.co/Intelligent-Instruments-Lab/rave-models)
 - [IRCAM RAVE models download page](https://acids-ircam.github.io/rave_models_download)
 
-### CHECHPOINT: 
-**Are you going to use pretrained models only?**
-- Yes: Good. Then, you can stop here and check [IRCAM `nn~`](https://github.com/acids-ircam/nn_tilde) repo for further information
-- No: You adventurer! Keep going with the following steps.
-
 ## 3) Read Export Naming Quickly
 
 Example:
@@ -33,6 +28,16 @@ Interpretation:
 - `b512`: latent block size
 - `r48000`: model sample rate
 - `z16`: 16 controllable latent channels
+
+
+
+### CHECHPOINT: 
+**Are you going to use pretrained models only?**
+- Yes: Good. Then, you can stop here and check [IRCAM `nn~`](https://github.com/acids-ircam/nn_tilde) repo for further information
+- No: You adventurer! Keep going with the following steps.
+
+
+
 
 ## 4) Always Check Sidecar Metadata
 

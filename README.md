@@ -216,5 +216,4 @@ Then, in the `nn_tilde` directory, run:
 sudo codesign --deep --force --sign - support/*.dylib
 sudo codesign --deep --force --sign - externals/*/Contents/MacOS/*
 xattr -r -d com.apple.quarantine externals/*/Contents/MacOS/*
-xattr -r -d com.apple.quarantine support/*.dylib # this line was missing, oops!
-```
+xattr -r -d com.apple.quarantine support/*.dylib 
