@@ -40,6 +40,8 @@ Both are valid for this hackathon. Use whichever environment matches your workfl
 
 All commands below assume you are in the repository root.
 
+**NOTE:** The Python installations are necessary mainly for training your own RAVE model. For using pretrained models, you only need the audio programming environment (Max/Pd/SuperCollider) installed. In addition: [BioPoint Sensor Setup](pages/biopoint.md).
+
 ### A) Check Python
 
 macOS / Ubuntu:
@@ -196,3 +198,24 @@ This is the main part of the hackathon. Working either solo or in a team, you wi
 
 - Additional audio effects, except for basic live-mixing elements such as reverb and compression
 - Audio sources other than RAVE-based synthesis, except when using RAVE as an audio effect (timbre transfer) processing an external audio input
+
+
+## Troubleshooting
+
+### "Mac quarantine issue"
+
+In your terminal application, navigate to the `nn_tilde` directory in your respective Max/Pd installation (that you have presumably downloaded, unzipped and added to the Package folder yourself):
+
+```bash
+cd ~/path/to/Max X/Packages/nn_tilde 
+# i.e. whatever the path/version of your Max/Pd install is; Pd uses externals/nn_tilde I think?
+```
+
+Then, in the `nn_tilde` directory, run:
+
+```bash
+sudo codesign --deep --force --sign - support/*.dylib
+sudo codesign --deep --force --sign - externals/*/Contents/MacOS/*
+xattr -r -d com.apple.quarantine externals/*/Contents/MacOS/*
+xattr -r -d com.apple.quarantine support/*.dylib # this line was missing, oops!
+```
