@@ -42,7 +42,7 @@ All commands below assume you are in the repository root.
 
 **Note:** Python is mainly needed for training your own RAVE model and for running the BioPoint notebooks. If you only want to use pretrained models in Max/Pd/SuperCollider, you only need that audio environment installed. For the BioPoint notebooks, use Python `3.12`.
 
-### A) Check Python
+### A) Check Python (Version 3.12 is needed for the notebooks)
 
 macOS / Ubuntu:
 
