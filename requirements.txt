@@ -1,12 +1,18 @@
-# Install torch/torchaudio separately first (platform-specific), then run:
-#   pip install -r requirements.txt
+# Captured profile: CPython 3.14.2, macOS Apple Silicon (arm64).
+# UNTESTED recreation: installed metadata, not a validated clean rebuild.
+# See REBUILD.md; this is not a universal or hash-locked lockfile.
+-c requirements-macos-arm64-py314.constraints.txt
 
-acids-rave
-jupyterlab
-ipykernel
-tensorboard
-librosa
-soundfile
-numpy
-pandas
-matplotlib
+acids-rave==2.1.16
+jupyterlab==4.5.6
+ipykernel==7.2.0
+tensorboard==2.20.0
+librosa==0.11.0
+soundfile==0.13.1
+numpy==2.4.4
+pandas==3.0.2
+matplotlib==3.10.8
+torch==2.11.0
+torchaudio==2.11.0
+# Preserve the README setuptools<81 constraint.
+setuptools==80.10.2
